@@ -14,7 +14,7 @@ class AddOldIdToMultipleTables extends Migration
     public function up()
     {
         Schema::table('divisions', function (Blueprint $table) {
-            $table->integer('country_id')->default(1)->after('id');
+            $table->string('country_code',2)->charset('utf8mb4')->collation('utf8mb4_unicode_ci')->after('id');
             $table->integer('old_id')->default(0)->after('id');
         });
 
