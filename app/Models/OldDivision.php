@@ -16,7 +16,7 @@ class OldDivision extends Model
 
     protected $fillable = [
         'old_id',
-        'country_id',
+        'country_code',
         'name',
         'bn_name',
         'slug',
