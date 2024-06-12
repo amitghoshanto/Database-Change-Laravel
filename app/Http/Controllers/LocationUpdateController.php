@@ -24,7 +24,7 @@ class LocationUpdateController extends Controller
             //do this in firstOrCreate method if not inserted already
             $newDivision = OldDivision::firstOrCreate([
                 'old_id' => $newDivision->id,
-                'country_id' => 2,
+                'country_code' => 'in',
                 'name' => $newDivision->name,
                 'bn_name' => $newDivision->name,
                 'slug' => $newDivision->slug,
